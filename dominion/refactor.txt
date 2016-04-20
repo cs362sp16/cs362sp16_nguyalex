@@ -1,0 +1,6 @@
+For Assignment 1
+I refactored the cards: smithy, village, greatHall, council room, and salvager.
+I chose these cards as they are relatively simple in their interactions with the game.
+I examined their interactions with the game and passed the appropriate data to their
+helper function. Their switch-case clause still exists to call the function.
+I made changes to the helper functions as requested.
