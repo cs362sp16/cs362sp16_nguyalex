@@ -1,0 +1,5 @@
+If a unit test early in the make file happens to seg fault, it will stop the compliation
+and will not continue with the other tests. This was annoying to fix as I would encounter new bugs
+when they finally ran. Even with implementing our own version of assert, the unit tests
+could still not stop a segfault. If only there was a way to try-catch in C like other
+languages.

@@ -1,0 +1,40 @@
+TEST SUCCESSFULLY COMPLETED.
+File 'unittest1.c'
+Lines executed:86.67% of 15
+unittest1.c:creating 'unittest1.c.gcov'
+
+FAILED ASSERTION: Testing whoseTurn, should pass
+File 'unittest2.c'
+Lines executed:93.75% of 16
+unittest2.c:creating 'unittest2.c.gcov'
+
+TEST SUCCESSFULLY COMPLETED.
+File 'unittest3.c'
+Lines executed:87.50% of 16
+unittest3.c:creating 'unittest3.c.gcov'
+
+TEST SUCCESSFULLY COMPLETED.
+File 'unittest4.c'
+Lines executed:87.50% of 16
+unittest4.c:creating 'unittest4.c.gcov'
+
+TEST SUCCESSFULLY COMPLETED.
+File 'cardtest1.c'
+Lines executed:88.89% of 18
+cardtest1.c:creating 'cardtest1.c.gcov'
+
+TEST SUCCESSFULLY COMPLETED.
+File 'cardtest2.c'
+Lines executed:88.89% of 18
+cardtest2.c:creating 'cardtest2.c.gcov'
+
+FAILED ASSERTION: Testing Embargo's coin increase, should pass
+File 'cardtest3.c'
+Lines executed:94.74% of 19
+cardtest3.c:creating 'cardtest3.c.gcov'
+
+FAILED ASSERTION: Testing outpost card, should pass
+File 'cardtest4.c'
+Lines executed:94.74% of 19
+cardtest4.c:creating 'cardtest4.c.gcov'
+

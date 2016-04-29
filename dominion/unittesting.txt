@@ -1,0 +1,7 @@
+I am surprised at how much is percentage is covered using my unit tests. I feel like
+my tests are inadequate but still we reached a high coverage percent. I believe this
+might be a false positive or that the coverage isn't exactly accurate.
+
+Aside from the segfaults I think the testing efforts wasn't as hard as I thought it
+would be. It was a bit difficult to get test cases created but once I had a flow going,
+test case ideas started to come out naturally.
