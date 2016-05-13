@@ -1,0 +1,4 @@
+Creating a random tester was similar to creating a unit test that repeats itself over and over.
+Utilizing forloops allows us to create the cardtest and we just randomized each players hand size and deck size.
+Overall it was not that difficult to get 100% coverage however I believe it is hard to find the fault if one
+were to be triggered.
