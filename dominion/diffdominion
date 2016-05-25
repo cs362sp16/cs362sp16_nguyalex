@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# make temp folder
+tempdir="different_dom"
+mkdir $tempdir
+
+# compile both dominions into tempdir
+clang ./{testdominion.c,dominion.c,interface.c,rngs.c} -o $tempdir/testdom1.out -lm -g
+clang ./testdominion.c $tempdir/{dominion.c,interface.c,rngs.c} -o $tempdir/testdom2.out -lm -g
+
+# run tests on both
+for i in `seq 1 42`;
+do
+    ./$tempdir/testdom1.out $i > $tempdir/dom1results
+    ./$tempdir/testdom2.out $i > $tempdir/dom2results
+done
+
+# diff
+diff $tempdir/dom1results $tempdir/dom2results > $tempdir/diff_results
+
+if [ $tempdir/diff_results != ""  ]; then
+    echo TEST PASSED
+else
+    echo TEST FAILED
+    echo "Diff results: "
+    cat $tempdir/diff_results
+fi
