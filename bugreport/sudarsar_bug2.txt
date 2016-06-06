@@ -1,0 +1,1 @@
+The second bug I found with Sudarsar's code was that Remodel was not discarding itself. When the card is triggered the card does not discard itself. Thus, the player gains a card for no cost. This was found via manual testing by playing the game.

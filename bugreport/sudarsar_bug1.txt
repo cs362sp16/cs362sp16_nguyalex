@@ -1,0 +1,1 @@
+I found that Sudasar's Coucil Room does not act as expected. The card was not incrementing the buy counter by one but executed the card draw part appropriately. This was found via my unit tests on his code.

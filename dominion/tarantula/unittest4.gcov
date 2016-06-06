@@ -1,0 +1,36 @@
+        -:    0:Source:unittest4.c
+        -:    0:Graph:unittest4.gcno
+        -:    0:Data:unittest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include <stdio.h>
+        -:    3:
+        -:    4:int failed = 0;
+        -:    5:
+        1:    6:void myassert(int b,char* msg) {
+        1:    7:  if (b == 0) {
+    #####:    8:    printf("FAILED ASSERTION: %s\n",msg);
+    #####:    9:    failed = 1;
+        -:   10:  }
+        1:   11:}
+        -:   12:
+        1:   13:void checkasserts() {
+        1:   14:  if (!failed) {
+        1:   15:    printf ("TEST SUCCESSFULLY COMPLETED.\n");
+        -:   16:  }
+        1:   17:}
+        -:   18:
+        1:   19:int main() {
+        -:   20:  struct gameState g;
+        -:   21:
+        -:   22:  int k[10] = {smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,
+        1:   23:	       outpost,baron,tribute};
+        -:   24:
+        1:   25:   initializeGame(2, k, 5, &g);
+        1:   26:   int r = shuffle(2, &g);
+        1:   27:   myassert(r == -1, "Initialized with 2 players and asked to shuffle the 2nd player, should pass");
+        -:   28:
+        1:   29:  checkasserts();
+        1:   30:  return 0;
+        -:   31:}

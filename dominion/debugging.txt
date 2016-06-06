@@ -1,0 +1,7 @@
+Leed reporte to me that my feast card was causing an infinite loop.
+Using Agan's rule #3 of "Quit thinking and look", i approached
+the code and saw it obviously would infinite loop forever because of the variable x.
+He said it was quite a common bug since the variable x is never redefined
+and runs forever. I fixed it by assigning the variable of X to it's appropriate values
+for each condition. I was surprised my random tester never played the feast card and
+thus I never encountered the bug. 

@@ -1,0 +1,1 @@
+During my random tests on Leed's code, I found that there was an execution branch that would crash if Remodel was played with an empty hand. This is a somewhat common bug that I have heard from others. The bug will try to evaluate a card's costs if null card was discarded. 

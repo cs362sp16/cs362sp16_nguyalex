@@ -1,0 +1,23 @@
+
+# Implementation
+
+The ‘tests.txt' file is read into the program, then each gcov file is
+processed. Depending on the pass/fail status of that test determines
+which files should be flagged. From there it run’s it’s suspiciousness test on the 
+area of code. It rates them and reports back if the suspiciousness is high. 
+A good majority of the code is from examples I found via Google and Github.
+
+Format of tests.txt
+
+    testName    testName.gcov     pass-or-fail
+
+# Instructions
+
+1. Run the test.
+2. Run gcov on unittest1.c.
+3. Copy unittest1.c.gcov into the /tarantula analysis directory as unittest1.gcov.
+4. Repeat steps 1-5 for all tests.
+5. Run `make clean` to wipe away previous data.
+6. Write your tests.txt file up (including a name, the gcov file for that
+   test and the pass/fail status).
+7. Run tarantula.py.
